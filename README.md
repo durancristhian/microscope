@@ -3,6 +3,10 @@ microscope
 
 > Aplicación hecha siguiendo el libro ["Discover Meteor"](http://es.discovermeteor.com/)
 
+Demo
+----------
+[microscope](http://cduran-microscope.meteor.com/)
+
 Desarrollo
 ----------
 > meteor run
