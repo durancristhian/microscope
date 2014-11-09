@@ -1,4 +1,4 @@
-body, .pure-g [class *="pure-u"] {
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
 	font-family: "Tahoma", sans-serif;
 	letter-spacing: 2px;
 }
@@ -22,6 +22,7 @@ header h1 {
 	margin: 0;
 }
 header h1 a {
+	color: #2980b9;
 	-moz-transition: all .25s ease-in-out;
 	-webkit-transition: all .25s ease-in-out;
 	transition: all .25s ease-in-out;
@@ -36,28 +37,44 @@ header h1 a:hover {
 #login-buttons .login-link-text {
 	text-decoration: none;
 }
+.actions-panel {
+	margin-bottom: 50px;
+}
+.button-success, .button-error, .button-warning, .button-secondary {
+	color: white;
+	border-radius: 2px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-success {
+	background: rgb(28, 184, 65);
+}
+.button-error {
+	background: rgb(202, 60, 60);
+}
+.button-warning {
+	background: rgb(223, 117, 20);
+}
+.button-secondary {
+	background: rgb(66, 184, 221);
+}
 .container {
 	margin: 0 auto;
 	width: 1024px;
 }
-.content {
-	margin: 50px 0 0;
-}
-.content .post {
+.post {
 	background: #fff;
 	border: 1px solid #ccc;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, .05);
-	margin: 0 10px;
 	padding: 10px;
 }
-.content .post .post-header a.external-link {
+.post .post-header a.external-link {
 	color: #666;
 }
-.content .post .post-header h2 {
+.post .post-header h2 {
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 5px;
 	text-align: center;
 }
 .postsList .post {
-	margin-bottom: 10px;
+	margin: 0 10px 10px 0;
 }
