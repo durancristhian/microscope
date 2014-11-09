@@ -1,12 +1,6 @@
 <template name="layout">
 
-	<header>
-		<div class="container">
-			<h1>
-				<a href="{{pathFor 'postsList'}}">Microscope</a>
-			</h1>
-		</div>
-	</header>
+	{{> header}}
 	<div class="container">
 		<div class="content">
 			{{> yield}}

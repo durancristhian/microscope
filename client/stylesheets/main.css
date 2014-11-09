@@ -29,6 +29,13 @@ header h1 a {
 header h1 a:hover {
 	letter-spacing: 5px;
 }
+#login-buttons {
+	margin-top: 10px;
+	text-align: left;
+}
+#login-buttons .login-link-text {
+	text-decoration: none;
+}
 .container {
 	margin: 0 auto;
 	width: 1024px;
