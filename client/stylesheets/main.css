@@ -37,8 +37,15 @@ header h1 a:hover {
 #login-buttons .login-link-text {
 	text-decoration: none;
 }
-.actions-panel {
-	margin-bottom: 50px;
+.access-denied {
+	background: rgb(223, 117, 20);
+	border: 1px solid rgb(202, 60, 60);
+	border-radius: 2px;
+}
+.access-denied h2 {
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 .button-success, .button-error, .button-warning, .button-secondary {
 	color: white;
@@ -61,20 +68,22 @@ header h1 a:hover {
 	margin: 0 auto;
 	width: 1024px;
 }
+.panel {
+	margin-top: 50px;
+}
 .post {
 	background: #fff;
 	border: 1px solid #ccc;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, .05);
-	padding: 10px;
+	padding: 5px 15px;
 }
 .post .post-header a.external-link {
 	color: #666;
 }
-.post .post-header h2 {
+.post .post-header h3 {
 	border-bottom: 1px solid #ccc;
-	padding-bottom: 5px;
-	text-align: center;
+	padding-bottom: 10px;
 }
-.postsList .post {
+.posts-list .post {
 	margin: 0 10px 10px 0;
 }
