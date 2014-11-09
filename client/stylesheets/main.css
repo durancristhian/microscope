@@ -28,6 +28,7 @@ header h1 a {
 	transition: all .25s ease-in-out;
 }
 header h1 a:hover {
+	color: #73A2BD;
 	letter-spacing: 5px;
 }
 #login-buttons {
