@@ -5,8 +5,8 @@ Template.postSubmit.events({
 		e.preventDefault();
 
 		var post = {
-			url: $(e.target).find('[name=url]').val(),
-			title: $(e.target).find('[name=title]').val()
+			title: $(e.target).find('[name=title]').val(),
+			url: $(e.target).find('[name=url]').val()
 		};
 
 		Meteor.call("postInsert", post, function (error, result) {

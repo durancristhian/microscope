@@ -8,9 +8,18 @@
 			<p>
 				<a href="{{url}}" target="_blank" class="external-link">
 					<i class="fa fa-globe"></i>
-					<span>{{domain}}</span>					
+					<span class="underline">{{domain}}</span>					
 				</a>
 			</p>
+			<p>
+				<i class="fa fa-male"></i>
+				<span>Submitted by</span>
+				<strong>{{author}}</strong>
+			</p>
+			{{#if ownPost}}
+				<a href="{{pathFor 'postEdit'}}" class="pure-button pure-button-active button-secondary">Edit</a>
+			{{/if}}
+			<a href="{{pathFor 'postPage'}}" class="pure-button pure-button-active button-warning">Discuss</a>
 		</div>
 	</div>
 
