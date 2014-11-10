@@ -41,10 +41,31 @@ header .pure-button {
 	text-decoration: none;
 }
 .alert {
+	-moz-animation: fadeOut 5000ms ease-in 0s 1 forwards;
+	-webkit-animation: fadeOut 5000ms ease-in 0s 1 forwards;
+	animation: fadeOut 5000ms ease-in 0s 1 forwards;
 	background: rgb(223, 117, 20);
 	border: 1px solid rgb(202, 60, 60);
 	border-radius: 2px;
 	margin-bottom: 15px;
+}
+@-moz-keyframes fadeOut {
+	0% { opacity: 0; }
+	10% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes fadeOut {
+	0% { opacity: 0; }
+	10% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@keyframes fadeOut {
+	0% { opacity: 0; }
+	10% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
 }
 .alert h2, .alert p {
 	color: #fff;

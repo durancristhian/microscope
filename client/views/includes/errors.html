@@ -2,8 +2,14 @@
 
 	{{#each errors}}
 		<div class="alert">
-			<p>{{message}}</p>
+			{{> error}}
 		</div>
 	{{/each}}
+
+</template>
+
+<template name="error">
+
+	<p>{{message}}</p>
 
 </template>

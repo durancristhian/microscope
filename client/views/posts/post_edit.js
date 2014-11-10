@@ -14,7 +14,7 @@ Template.postEdit.events({
 	
 			if (error) {
 
-				alert(error.reason);
+				throwError(error.reason);
 			} else {
 
 				Router.go('postPage', {_id: currentPostId});
