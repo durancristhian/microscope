@@ -40,12 +40,13 @@ header .pure-button {
 #login-buttons .login-link-text {
 	text-decoration: none;
 }
-.access-denied {
+.alert {
 	background: rgb(223, 117, 20);
 	border: 1px solid rgb(202, 60, 60);
 	border-radius: 2px;
+	margin-bottom: 15px;
 }
-.access-denied h2 {
+.alert h2, .alert p {
 	color: #fff;
 	text-align: center;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
