@@ -112,6 +112,16 @@ header .pure-button {
 .posts-list .post {
 	margin: 0 10px 10px 0;
 }
+.pure-form input.has-error {
+	background: #F8D0D0;
+}
 .underline {
 	text-decoration: underline;
+}
+.validations {
+	margin-left: 25px;
+}
+.validations p {
+	font-style: italic;
+	font-weight: bold;
 }
