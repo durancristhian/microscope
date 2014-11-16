@@ -2,13 +2,23 @@
 
 	<h2>Edit post</h2>
 	<form class="pure-form">
-		<fieldset class="pure-group">
-			<input type="text" class="pure-input-1-2" value="{{title}}" name="title">
-			<input type="text" class="pure-input-1-2" value="{{url}}" name="url">
-		</fieldset>
+		<div class="pure-g">
+			<div class="pure-u-1-2">
+				<fieldset class="pure-group">
+					<input type="text" class="pure-input-1 {{errorClass 'title'}}" value="{{title}}" name="title">
+					<input type="text" class="pure-input-1 {{errorClass 'url'}}" value="{{url}}" name="url">
+				</fieldset>
 
-		<button type="submit" class="pure-button pure-button-active button-secondary">Edit</button>
-		<button type="submit" class="delete pure-button pure-button-active button-error">Delete</button>
+				<button type="submit" class="pure-button pure-button-active button-secondary">Edit</button>
+				<button type="submit" class="delete pure-button pure-button-active button-error">Delete</button>
+			</div>
+			<div class="pure-u-1-2">
+				<div class="validations">
+					<p>{{errorMessage 'title'}}</p>
+					<p>{{errorMessage 'url'}}</p>
+				</div>
+			</div>
+		</div>
 	</form>
 
 </template>

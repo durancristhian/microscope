@@ -14,6 +14,15 @@ Posts.deny({
 	}
 });
 
+Posts.deny({
+
+	update: function(userId, post, fieldNames) {
+
+		var errors = validatePost(modifier.$set);
+		return errors.title || errors.url;
+	}
+});
+
 Meteor.methods({
 
 	postInsert: function(postAttributes) {
