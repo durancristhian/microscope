@@ -2,4 +2,17 @@
 
 	{{> postItem}}
 
+	<div class="comments">
+
+		{{#if comments}}
+			<h2>Comments</h2>
+			{{#each comments}}
+				{{> commentItem}}
+			{{/each}}
+		{{else}}
+			<h2>No comments (yet).</h2>
+		{{/if}}
+	
+	</div>
+
 </template>

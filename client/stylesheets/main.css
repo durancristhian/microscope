@@ -89,6 +89,25 @@ header .pure-button {
 .button-secondary {
 	background: rgb(66, 184, 221);
 }
+.comments {
+	margin: 50px auto;
+	width: 90%;
+}
+.comments .comment {
+	background: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .05);
+	margin: 25px 0;
+	padding: 15px;
+}
+.comments .comment h3 {
+	margin: 0 0 15px;
+}
+.comments .comment .date {
+	font-style: italic;
+	margin: 0 0 15px;
+	text-align: right;
+}
 .container {
 	margin: 0 auto;
 	width: 1024px;
