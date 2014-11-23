@@ -1,0 +1,12 @@
+<template name="commentSubmit">
+
+	<h2>Add a comment</h2>
+	<form class="pure-form">
+		<p>{{errorMessage 'body'}}</p>
+		<fieldset class="pure-group">
+			<textarea name="body" class="pure-input-1 {{errorClass 'body'}}" rows="10" placeholder="Your comment"></textarea>
+		</fieldset>
+		<button type="submit" class="pure-button pure-input-1 pure-button-active button-success">Send</button>
+	</form>
+
+</template>

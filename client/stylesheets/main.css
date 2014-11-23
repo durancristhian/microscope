@@ -32,6 +32,7 @@ header h1 a:hover {
 	letter-spacing: 5px;
 }
 header .pure-button {
+	float: right;
 	margin-top: 2px;
 }
 #login-buttons {
@@ -90,8 +91,7 @@ header .pure-button {
 	background: rgb(66, 184, 221);
 }
 .comments {
-	margin: 50px auto;
-	width: 90%;
+	margin: 50px 50px 50px 0;
 }
 .comments .comment {
 	background: #fff;
@@ -131,7 +131,7 @@ header .pure-button {
 .posts-list .post {
 	margin: 0 10px 10px 0;
 }
-.pure-form input.has-error {
+.pure-form input.has-error, .pure-form textarea.has-error {
 	background: #F8D0D0;
 }
 .underline {

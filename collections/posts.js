@@ -33,7 +33,7 @@ Meteor.methods({
 			url: String
 		});
 
-		var errors = validatePost(post);
+		var errors = validatePost(postAttributes);
 
 		if (errors.title || errors.url)
 			throw new Meteor.Error('invalid-post', "You must set a title and URL for your post");
@@ -51,7 +51,8 @@ Meteor.methods({
 		var post = _.extend(postAttributes, {
 			userId: user._id,
 			author: user.username,
-			submitted: new Date()
+			submitted: new Date(),
+			commentsCount: 0
 		});
 
 		var postId = Posts.insert(post);

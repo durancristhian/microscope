@@ -11,6 +11,11 @@ Desarrollo
 ----------
 > meteor run
 
+Errores
+----------
+> Al intentar editar un post, ocurre un error
+> La suscripción de comentarios por postId no funciona
+
 License
 ----------
 Licensed under the MIT license.
