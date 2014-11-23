@@ -13,7 +13,7 @@ Desarrollo
 
 Errores
 ----------
-> Al intentar editar un post, ocurre un error
+> Al intentar editar un post, ocurre un error <br>
 > La suscripción de comentarios por postId no funciona
 
 License
