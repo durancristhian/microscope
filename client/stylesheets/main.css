@@ -31,9 +31,36 @@ header h1 a {
 header h1 a:hover {
 	letter-spacing: 5px;
 }
-header .pure-button {
-	float: right;
-	margin-top: 2px;
+header .right-content {
+	text-align: right;
+}
+header .notification {
+	margin: 10px 0 0;
+}
+header .notification:first-of-type {
+	margin-top: 50px;
+}
+header .notification a {
+	color: rgb(28, 184, 65);
+}
+header .notification .fa {
+	margin-right: 10px;
+}
+header .notifications-link * {
+	display: inline-block;
+	vertical-align: middle;
+}
+header .notifications-link .number {
+	border-radius: 2px;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+header .notifications-link.has-notifications .number {
+	background: #c0392b;
+	color: #fff;
+}
+header .notifications-list {
+	text-align: left;
 }
 #login-buttons {
 	margin-top: 10px;
@@ -110,7 +137,7 @@ header .pure-button {
 }
 .container {
 	margin: 0 auto;
-	width: 1024px;
+	width: 1120px;
 }
 .panel {
 	margin: 50px 0;

@@ -1,0 +1,23 @@
+<template name="notifications">
+
+	<div class="right-content">
+		<a href="#" class="notifications-link {{hasNotifications}}">
+			<span class="fa fa-bell"></span>
+			<span class="number">{{notificationsCount}}</span>
+		</a>
+	</div>
+	{{#if showNotifications}}
+		<div class="notifications-list">
+			{{#each notifications}}
+				<p class="notification">
+					<a href="{{notificationPostPath}}" target="_blank">
+						<span class="fa fa-comment"></span>
+						<strong>{{commenterName}}</strong>
+						<span> commented your post</span>
+					</a>
+				</p>
+			{{/each}}
+		</div>
+	{{/if}}
+
+</template>
