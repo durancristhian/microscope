@@ -139,6 +139,10 @@ header .notifications-list {
 	margin: 0 auto;
 	width: 1120px;
 }
+.load-more {
+	padding-top: 50px;
+	text-align: center;
+}
 .panel {
 	margin: 50px 0;
 }

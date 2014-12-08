@@ -8,7 +8,16 @@
 					{{> postItem}}
 				</div>
 			{{/each}}
-		</div>		
+		</div>
+		{{#if nextPath}}
+			<div class="load-more">
+				<a class="pure-button button-warning" href="{{nextPath}}">Load more</a>
+			</div>
+		{{else}}
+			{{#unless ready}}
+				{{> spinner}}
+			{{/unless}}
+		{{/if}}
 	</div>
 
 </template>
