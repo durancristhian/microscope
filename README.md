@@ -14,7 +14,6 @@ Desarrollo
 Errores
 ----------
 > Al intentar editar un post, ocurre un error <br>
-> No es posible agregar posts, creo que se rompió algo en el router :(
 
 License
 ----------
