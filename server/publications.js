@@ -10,12 +10,13 @@ Meteor.publish('posts', function (options) {
 
 Meteor.publish('singlePost', function (id) {
 
-	check(id, String)
+	check(id, String);
 	return Posts.find(id);
 });
 
-Meteor.publish('comments', function () {
+Meteor.publish('comments', function (id) {
 
+	check(id, String);
 	return Comments.find();
 });
 
