@@ -18,7 +18,7 @@ Posts.deny({
 
 	update: function(userId, post, fieldNames) {
 
-		var errors = validatePost(modifier.$set);
+		var errors = validatePost(post);
 		return errors.title || errors.url;
 	}
 });

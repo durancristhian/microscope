@@ -11,10 +11,6 @@ Desarrollo
 ----------
 > meteor run
 
-Errores
-----------
-> Al intentar editar un post, ocurre un error <br>
-
 License
 ----------
 Licensed under the MIT license.
