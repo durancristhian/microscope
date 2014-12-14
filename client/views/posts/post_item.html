@@ -2,7 +2,7 @@
 
 	<div class="post">
 		<div class="post-header">
-			<h3 class="to-center">
+			<h3>
 				<a href="{{pathFor 'postPage'}}">{{title}}</a>
 			</h3>
 			<p>
@@ -17,12 +17,19 @@
 				<strong>{{author}}</strong>
 			</p>
 			<p>
+				<i class="fa fa-thumbs-up"></i>
+				<strong>{{pluralize votes "Vote"}}</strong>
+			</p>
+			<p>
 				<i class="fa fa-list-ol"></i>
 				<span>Comments count:</span>
 				<strong>{{commentsCount}}</strong>
 			</p>
 			{{#if ownPost}}
 				<a href="{{pathFor 'postEdit'}}" class="pure-button pure-button-active button-secondary">Edit</a>
+			{{/if}}
+			{{#if currentUser}}
+				<a href="#" class="upvote pure-button pure-button-active button-success {{upvotedClass}}">+1</a>
 			{{/if}}
 		</div>
 	</div>

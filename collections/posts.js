@@ -8,7 +8,7 @@ Posts.allow({
 
 Posts.deny({
 	
-	update: function(userId, post, fieldNames) {
+	update: function (userId, post, fieldNames) {
 	
 		return (_.without(fieldNames, 'url', 'title').length > 0);
 	}
@@ -16,7 +16,7 @@ Posts.deny({
 
 Posts.deny({
 
-	update: function(userId, post, fieldNames) {
+	update: function (userId, post, fieldNames) {
 
 		var errors = validatePost(post);
 		return errors.title || errors.url;
@@ -25,7 +25,7 @@ Posts.deny({
 
 Meteor.methods({
 
-	postInsert: function(postAttributes) {
+	postInsert: function (postAttributes) {
 
 		check(Meteor.userId(), String);
 		check(postAttributes, {
@@ -52,7 +52,9 @@ Meteor.methods({
 			userId: user._id,
 			author: user.username,
 			submitted: new Date(),
-			commentsCount: 0
+			commentsCount: 0,
+			upvoters: [],
+			votes: 0
 		});
 
 		var postId = Posts.insert(post);
@@ -60,6 +62,38 @@ Meteor.methods({
 		return {
 			_id: postId
 		};
+	},
+
+	upvote: function (postId) {
+
+		check(this.userId, String);
+		check(postId, String);
+
+		var post = Posts.findOne(postId);
+
+		if(!post) {
+
+			throw new Meteor.Error("invalid", "Post not found");
+		}
+
+		if(post.userId === this.userId) {
+
+			throw new Meteor.Error("invalid", "Come on! Do you want to vote your own post? :|");
+		}
+
+		if (_.include(post.upvoters, this.userId)) {
+
+			throw new Meteor.Error('invalid', 'Already upvoted this post');
+		}
+
+		Posts.update(post._id, {
+			$addToSet: {
+				upvoters: this.userId
+			},
+			$inc: {
+				votes: 1
+			}
+		});
 	}
 });
 
