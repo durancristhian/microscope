@@ -16,11 +16,10 @@ header {
 	background: #fff;
 	border-bottom: 1px solid #ccc;
 	padding: 15px 0;
-	text-align: center;
 }
 header h1 {
-	margin: 0;
-	text-align: left;
+	margin: 0 0 25px;
+	text-align: center;
 }
 header h1 a {
 	color: #666;
@@ -61,6 +60,13 @@ header .notifications-link.has-notifications .number {
 }
 header .notifications-list {
 	text-align: left;
+}
+header .sort {
+	margin-top: 10px;
+}
+header .sort.active {
+	color: rgb(202, 60, 60);
+	font-weight: bold;
 }
 #login-buttons {
 	margin-top: 10px;
