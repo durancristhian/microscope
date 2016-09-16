@@ -1,15 +1,7 @@
 microscope
 ----------
 
-> Aplicación hecha siguiendo el libro ["Discover Meteor"](http://es.discovermeteor.com/)
-
-Demo
-----------
-[microscope](http://cduran-microscope.meteor.com/)
-
-Desarrollo
-----------
-> meteor run
+Aplicación hecha siguiendo el libro ["Discover Meteor"](https://www.discovermeteor.com/)
 
 Screenshots
 ----------
